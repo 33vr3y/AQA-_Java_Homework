@@ -1,9 +1,9 @@
 package lesson_3;
 
 public class Park {
-private String name;
-private Address address;
-private String time;
+    private String name;
+    private Address address;
+    private String time;
 
     public Park(String name, Address address, String time) {
         this.name = name;
@@ -11,18 +11,18 @@ private String time;
         this.time = time;
     }
 
-    static class Attraction{
+    class Attraction {
         String attractionName;
         String attractionTime;
         double attractionCost;
 
-        public Attraction(String attractionName, String  attractionTime, double attractionCost){
+        public Attraction(String attractionName, String attractionTime, double attractionCost) {
             this.attractionName = attractionName;
             this.attractionTime = attractionTime;
             this.attractionCost = attractionCost;
         }
 
-        public void attractionInfo(){
+        public void attractionInfo() {
             System.out.println("Название аттракциона: " + attractionName);
             System.out.println("Время работы аттракциона: " + attractionTime);
             System.out.println("Стоимость аттракциона: " + attractionCost);
@@ -30,7 +30,7 @@ private String time;
         }
     }
 
-    static class Address{
+    class Address {
         String city;
         String street;
         String number;

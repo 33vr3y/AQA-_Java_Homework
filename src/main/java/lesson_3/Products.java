@@ -8,16 +8,16 @@ public class Products {
     private double cost;
     private boolean bookingStatus;
 
-    public Products(String name, String date, String manufacturer, String country, double cost, boolean bookingStatus){
-        this.name=name;
-        this.date=date;
-        this.manufacturer=manufacturer;
-        this.country=country;
-        this.cost=cost;
-        this.bookingStatus=bookingStatus;
+    public Products(String name, String date, String manufacturer, String country, double cost, boolean bookingStatus) {
+        this.name = name;
+        this.date = date;
+        this.manufacturer = manufacturer;
+        this.country = country;
+        this.cost = cost;
+        this.bookingStatus = bookingStatus;
     }
 
-    public void printInfo(){
+    public void printInfo() {
         System.out.println("Название: " + name + " | Дата: " + date +
                 " | Производитель: " + manufacturer);
         System.out.println("Страна производства: " + country);
