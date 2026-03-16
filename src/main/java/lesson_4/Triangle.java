@@ -1,11 +1,11 @@
 package lesson_4;
 
 public class Triangle implements Shape {
-    double a = 0;
-    double b = 0;
-    double c = 0;
-    String fillColor;
-    String borderColor;
+    private final double a;
+    private final double b;
+    private final double c;
+    private final String fillColor;
+    private final String borderColor;
 
     public Triangle(double a, double b, double c, String fillColor, String borderColor) {
         this.a = a;
@@ -13,6 +13,14 @@ public class Triangle implements Shape {
         this.c = c;
         this.fillColor = fillColor;
         this.borderColor = borderColor;
+    }
+
+    public String getFillColor() {
+        return fillColor;
+    }
+
+    public String getBorderColor() {
+        return borderColor;
     }
 
     @Override

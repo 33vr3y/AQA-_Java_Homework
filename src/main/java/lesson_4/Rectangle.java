@@ -1,16 +1,24 @@
 package lesson_4;
 
 public class Rectangle implements Shape {
-    double a = 0;
-    double b = 0;
-    String fillColor;
-    String borderColor;
+    private final double a;
+    private final double b;
+    private final String fillColor;
+    private final String borderColor;
 
     public Rectangle(double a, double b, String fillColor, String borderColor) {
         this.a = a;
         this.b = b;
         this.fillColor = fillColor;
         this.borderColor = borderColor;
+    }
+
+    public String getFillColor() {
+        return fillColor;
+    }
+
+    public String getBorderColor() {
+        return borderColor;
     }
 
     @Override
