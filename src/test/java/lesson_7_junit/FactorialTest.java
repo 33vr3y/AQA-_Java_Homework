@@ -6,9 +6,9 @@ import org.junit.jupiter.api.Test;
 public class FactorialTest {
 
     @Test
-    void factorialTest(){
+    void factorialTest() {
         Factorial factorial = new Factorial();
-        int result = Factorial.getFactorial(5);
+        int result = factorial.getFactorial(5);
         Assertions.assertEquals(120, result);
     }
 }

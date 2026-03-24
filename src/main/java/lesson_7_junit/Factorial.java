@@ -2,7 +2,7 @@ package lesson_7_junit;
 
 public class Factorial {
 
-    public static int getFactorial(int f) {
+    public int getFactorial(int f) {
         int result = 1;
         for (int i = 1; i <= f; i++) {
             result = result * i;
