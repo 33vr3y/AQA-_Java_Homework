@@ -51,7 +51,7 @@ public class PostmanEchoTest {
     }
 
     @Test
-    void testPut(){
+    void testPut() {
         given()
                 .baseUri("https://postman-echo.com")
                 .contentType("text/plain")
@@ -65,7 +65,7 @@ public class PostmanEchoTest {
     }
 
     @Test
-    void testPatch(){
+    void testPatch() {
         given()
                 .baseUri("https://postman-echo.com")
                 .contentType("text/plain")
@@ -79,7 +79,7 @@ public class PostmanEchoTest {
     }
 
     @Test
-    void testDelete(){
+    void testDelete() {
         given()
                 .baseUri("https://postman-echo.com")
                 .contentType("text/plain")
